@@ -1,0 +1,197 @@
+\documentclass[10pt, twoside]{article}
+\usepackage{setspace} 
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{blindtext}
+\usepackage[most]{tcolorbox}
+\usepackage{transparent}
+\usepackage[paperheight=11in, paperwidth=4in, textheight=26.3cm, textwidth=9cm, foot=1cm, bottom=0em]{geometry}
+%textwidth=8.255cm, bottom=1.5cm, right=1.8cm, left=-0.06cm, top=1.25cm, showframe
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{enumitem}
+%\usepackage[x11names]{xcolor}
+\usepackage[dvipsnames]{xcolor}
+%\usepackage{ifthen}
+%\usepackage{background}
+
+
+% set specific fonts
+\setmainfont{Rubik-Regular.ttf}    % main text font 
+
+\newfontfamily{\groupfont}{Harvest.otf}  % header fonts 
+
+%\newcommand*\ColText[1]{\textcolor{cyan}{#1}}
+\definecolor{imgay}{RGB}{25, 146, 158}       % company blue 
+
+% remove number from enumerated list 
+\renewcommand\labelenumi{}
+
+% reduce space between list and items
+\setlist{topsep=-\parskip}
+
+% underline items for order 
+\newcommand{\under}{\underline{\hspace{0.8cm}}}
+% pricing figures to right of page 
+\newcommand{\cost}{\null\hfill} 
+%\newcommand{\Expl}{\hspace*{2.5em}\footnotesize}
+% item description 
+\newcommand{\ingredients}[1]{\hspace{0.9cm}{#1}}
+
+
+\begin{document}
+
+%\pagecolor{shadecolor}
+
+% logo image import 
+\begin{figure}[htbp]
+    \vspace{0.45cm}
+        \hspace*{-3.5cm}
+    \centerline{\includegraphics[scale=.20]{Circle Logo 1.png}}
+\end{figure}\\
+
+% header 
+\pagestyle{fancy}
+    \fancyhf{}
+        \fancyhead[R]{\fontsize{9}{10}\selectfont Name \underline{\hspace{4.25cm}}}
+    \renewcommand{\headheight}{-1.5cm}
+\renewcommand\headrulewidth{0pt}
+
+% footer 
+\fancyfoot[C]{\fontsize{8}{9}\selectfont *Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.}
+    \renewcommand\footrulewidth{0pt}\\
+
+\vspace{-0.25cm}
+
+\paragraph{\begin{tcolorbox}[colback=imgay,enhanced,sharp corners,frame hidden, top=0.55, bottom=0.55] \textcolor{white}{RAW BAR} 
+   \end{tcolorbox}}
+
+\vspace{-1.21cm}
+
+\begin{enumerate}[itemsep=0.1cm]
+\vspace{-0.5cm}
+ \item\fontsize{7}{10}\selectfont Eating Instructions: Oysters down the list from lemon clockwise\\
+ \vspace{-0.3cm}
+ \fontsize{9}{10}\selectfont
+    \itemindent=-0.9cm 
+    \item\under SWELL OYSTER* \cost 2.75
+    \item\under FEATURED NH OYSTER* \cost 2.75
+    \item\under FEATURED MA OYSTER* \cost 3.25
+    \item\under FEATURED ME OYSTER* \cost 3.50
+    \item\under FEATURED CAN OYSTER* \cost 3.25
+    \item\under FEATURED OTHER* \cost Mkt
+    \item\under LITTLENECK CLAMS* \cost 2.50
+    \item\under SHRIMP COCKTAIL \cost 3.00
+    \item\under JONAH CRAB CLAW \cost 3.00
+    \item\under TARTARE (6oz)*   \cost 15.00
+    \item\under CEVICHE (6oz)* \cost Mkt
+    \item\under CAVIAR (10g)* \cost 28.00
+    \item\under CUCUMBER SEAWEED SALAD \cost 10.00
+    \item\under SMOKED BLUEFISH P\^{A}T\'{E} \cost 14.00 
+
+    \vspace{0.45cm}
+\end{enumerate}
+
+
+\vspace{1cm}
+
+\cost\fontsize{9}{10}\selectfont Name\underline{\hspace{4.25cm}}
+
+\vspace{-0.5cm}
+
+\paragraph{\begin{tcolorbox}[colback=imgay,enhanced,sharp corners,frame hidden, top=0.55, bottom=0.55] \textcolor{white}{STREET TACOS} 
+    \end{tcolorbox}}
+
+
+\begin{enumerate}[topsep=0.25em]
+
+\vspace{-0.41cm}
+
+    \itemindent=-0.9cm
+        \item\under CHICKEN ADOBO \cost 4.50  
+            \end{enumerate}
+                \ingredients{Red cabbage slaw, lime crema, cilantro, queso fresco}
+                \vspace{0.1cm}
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm
+        \item\under PORK CARNITAS \cost 4.50
+            \end{enumerate}
+                \ingredients{Fresno slaw, lime crema, scallion, queso fresco}
+                \vspace{0.1cm}
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm
+        \item\under SPICY BAJA FLOUNDER \cost 4.50
+            \end{enumerate}
+                \ingredients{Chipotle mayo slaw, pickled red onion, cilantro}
+                \vspace{0.1cm}
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm
+        \item\under NOPALITOS CACTUS \cost 4.50
+             \end{enumerate}
+                 \ingredients{Refried beans, cabbage slaw, onion, queso fresco}
+
+\vspace{-0.7cm}
+
+\paragraph{\begin{tcolorbox}[colback=imgay,enhanced,sharp corners,frame hidden, top=0.55, bottom=0.55] \textcolor{white}{LOBSTER ROLLS}
+    \end{tcolorbox}}
+
+\begin{enumerate}[topsep=0.22em]
+
+\vspace{-0.38cm}
+
+    \itemindent=-0.9cm
+        \item\under WARM BUTTER  \cost Mkt
+            \end{enumerate}
+                \ingredients{Warm buttered lobster on toasted bun with chips}
+                \vspace{0.1cm}
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm                
+        \item\under CLASSIC CREAMY  \cost Mkt
+            \end{enumerate}
+                \ingredients{Chilled lobster salad on toasted bun with chips}
+
+\vspace{-0.65cm}
+
+\paragraph{\begin{tcolorbox}[colback=imgay,enhanced,sharp corners,frame hidden, top=0.55, bottom=0.55] \textcolor{white}{SMALL BITES}
+    \end{tcolorbox}}
+
+\begin{enumerate}[topsep=0.22em]
+
+\vspace{-0.38cm}
+
+    \itemindent=-0.9cm
+        \item\under STREET CORN \cost 10.00
+            \end{enumerate}
+                \ingredients{White corn, mayo, scallion, lime, queso fresco }
+                \vspace{0.1cm}
+
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm  
+         \item\under CHIPS AND SALSA \cost 6.00
+            \end{enumerate}
+                \ingredients{\underline{\hspace{0.5cm}} Add Guac (6)}
+
+\vspace{-0.6cm}
+
+
+\paragraph{\begin{tcolorbox}[colback=imgay,enhanced,sharp corners,frame hidden, top=0.55, bottom=0.55] \textcolor{white}{KIDS} 
+    \end{tcolorbox}}
+
+\begin{enumerate}[topsep=0.22em]
+
+\vspace{-0.38cm}
+
+    \itemindent=-0.9cm
+        \item\under HOTDOG \cost 6.00
+            \end{enumerate}
+                \ingredients{Served on toasted bun with chips}
+                \vspace{0.1cm}
+\begin{enumerate}[resume]
+    \itemindent=-0.9cm
+        \item\under MAC AND CHEESE \cost 6.00
+            \end{enumerate}
+                \ingredients{Classic mac and cheese with chips}
+
+              
+
+\end{document}
